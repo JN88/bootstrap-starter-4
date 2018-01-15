@@ -1,0 +1,32 @@
+{
+  "name": "bootstrap-starter-4",
+  "version": "1.0.0",
+  "description": "A repo buided by JN88 based on Bootstrap v4.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "Hello World"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JN88/bootstrap-starter-4"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "bootstrap",
+    "starter"
+  ],
+  "author": "Jason Nguyen",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.4",
+    "run-sequence": "^2.2.1"
+  }
+}
