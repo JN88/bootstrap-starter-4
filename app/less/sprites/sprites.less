@@ -1,0 +1,241 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-facebook-name: 'icon-facebook';
+@icon-facebook-x: 0px;
+@icon-facebook-y: 0px;
+@icon-facebook-offset-x: 0px;
+@icon-facebook-offset-y: 0px;
+@icon-facebook-width: 32px;
+@icon-facebook-height: 32px;
+@icon-facebook-total-width: 66px;
+@icon-facebook-total-height: 66px;
+@icon-facebook-image: '../images/sprites.png';
+@icon-facebook: 0px 0px 0px 0px 32px 32px 66px 66px '../images/sprites.png' 'icon-facebook';
+@icon-google-plus-name: 'icon-google-plus';
+@icon-google-plus-x: 34px;
+@icon-google-plus-y: 0px;
+@icon-google-plus-offset-x: -34px;
+@icon-google-plus-offset-y: 0px;
+@icon-google-plus-width: 32px;
+@icon-google-plus-height: 32px;
+@icon-google-plus-total-width: 66px;
+@icon-google-plus-total-height: 66px;
+@icon-google-plus-image: '../images/sprites.png';
+@icon-google-plus: 34px 0px -34px 0px 32px 32px 66px 66px '../images/sprites.png' 'icon-google-plus';
+@icon-twitter-name: 'icon-twitter';
+@icon-twitter-x: 0px;
+@icon-twitter-y: 34px;
+@icon-twitter-offset-x: 0px;
+@icon-twitter-offset-y: -34px;
+@icon-twitter-width: 32px;
+@icon-twitter-height: 32px;
+@icon-twitter-total-width: 66px;
+@icon-twitter-total-height: 66px;
+@icon-twitter-image: '../images/sprites.png';
+@icon-twitter: 0px 34px 0px -34px 32px 32px 66px 66px '../images/sprites.png' 'icon-twitter';
+@icon-youtube-name: 'icon-youtube';
+@icon-youtube-x: 34px;
+@icon-youtube-y: 34px;
+@icon-youtube-offset-x: -34px;
+@icon-youtube-offset-y: -34px;
+@icon-youtube-width: 32px;
+@icon-youtube-height: 32px;
+@icon-youtube-total-width: 66px;
+@icon-youtube-total-height: 66px;
+@icon-youtube-image: '../images/sprites.png';
+@icon-youtube: 34px 34px -34px -34px 32px 32px 66px 66px '../images/sprites.png' 'icon-youtube';
+@icon-facebook-2x-name: 'icon-facebook@2x';
+@icon-facebook-2x-x: 0px;
+@icon-facebook-2x-y: 0px;
+@icon-facebook-2x-offset-x: 0px;
+@icon-facebook-2x-offset-y: 0px;
+@icon-facebook-2x-width: 64px;
+@icon-facebook-2x-height: 64px;
+@icon-facebook-2x-total-width: 132px;
+@icon-facebook-2x-total-height: 132px;
+@icon-facebook-2x-image: '../images/sprite@2x.png';
+@icon-facebook-2x: 0px 0px 0px 0px 64px 64px 132px 132px '../images/sprite@2x.png' 'icon-facebook@2x';
+@icon-google-plus-2x-name: 'icon-google-plus@2x';
+@icon-google-plus-2x-x: 68px;
+@icon-google-plus-2x-y: 0px;
+@icon-google-plus-2x-offset-x: -68px;
+@icon-google-plus-2x-offset-y: 0px;
+@icon-google-plus-2x-width: 64px;
+@icon-google-plus-2x-height: 64px;
+@icon-google-plus-2x-total-width: 132px;
+@icon-google-plus-2x-total-height: 132px;
+@icon-google-plus-2x-image: '../images/sprite@2x.png';
+@icon-google-plus-2x: 68px 0px -68px 0px 64px 64px 132px 132px '../images/sprite@2x.png' 'icon-google-plus@2x';
+@icon-twitter-2x-name: 'icon-twitter@2x';
+@icon-twitter-2x-x: 0px;
+@icon-twitter-2x-y: 68px;
+@icon-twitter-2x-offset-x: 0px;
+@icon-twitter-2x-offset-y: -68px;
+@icon-twitter-2x-width: 64px;
+@icon-twitter-2x-height: 64px;
+@icon-twitter-2x-total-width: 132px;
+@icon-twitter-2x-total-height: 132px;
+@icon-twitter-2x-image: '../images/sprite@2x.png';
+@icon-twitter-2x: 0px 68px 0px -68px 64px 64px 132px 132px '../images/sprite@2x.png' 'icon-twitter@2x';
+@icon-youtube-2x-name: 'icon-youtube@2x';
+@icon-youtube-2x-x: 68px;
+@icon-youtube-2x-y: 68px;
+@icon-youtube-2x-offset-x: -68px;
+@icon-youtube-2x-offset-y: -68px;
+@icon-youtube-2x-width: 64px;
+@icon-youtube-2x-height: 64px;
+@icon-youtube-2x-total-width: 132px;
+@icon-youtube-2x-total-height: 132px;
+@icon-youtube-2x-image: '../images/sprite@2x.png';
+@icon-youtube-2x: 68px 68px -68px -68px 64px 64px 132px 132px '../images/sprite@2x.png' 'icon-youtube@2x';
+@spritesheet-width: 66px;
+@spritesheet-height: 66px;
+@spritesheet-image: '../images/sprites.png';
+@spritesheet-sprites: @icon-facebook @icon-google-plus @icon-twitter @icon-youtube;
+@spritesheet: 66px 66px '../images/sprites.png' @spritesheet-sprites;
+@retina-spritesheet-width: 132px;
+@retina-spritesheet-height: 132px;
+@retina-spritesheet-image: '../images/sprite@2x.png';
+@retina-spritesheet-sprites: @icon-facebook-2x @icon-google-plus-2x @icon-twitter-2x @icon-youtube-2x;
+@retina-spritesheet: 132px 132px '../images/sprite@2x.png' @retina-spritesheet-sprites;
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+@icon-facebook-group-name: 'icon-facebook';
+@icon-facebook-group: 'icon-facebook' @icon-facebook @icon-facebook-2x;
+@icon-google-plus-group-name: 'icon-google-plus';
+@icon-google-plus-group: 'icon-google-plus' @icon-google-plus @icon-google-plus-2x;
+@icon-twitter-group-name: 'icon-twitter';
+@icon-twitter-group: 'icon-twitter' @icon-twitter @icon-twitter-2x;
+@icon-youtube-group-name: 'icon-youtube';
+@icon-youtube-group: 'icon-youtube' @icon-youtube @icon-youtube-2x;
+@retina-groups: @icon-facebook-group @icon-google-plus-group @icon-twitter-group @icon-youtube-group;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+.sprite-background-size(@sprite) {
+  @sprite-total-width: extract(@sprite, 7);
+  @sprite-total-height: extract(@sprite, 8);
+  background-size: @sprite-total-width @sprite-total-height;
+}
+
+.retina-sprite(@retina-group) {
+  @normal-sprite: extract(@retina-group, 2);
+  @retina-sprite: extract(@retina-group, 3);
+  .sprite(@normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    .sprite-image(@retina-sprite);
+    .sprite-background-size(@normal-sprite);
+  }
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
+
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+.retina-sprites(@retina-groups, @i: 1) when (@i <= length(@retina-groups)) {
+  @retina-group: extract(@retina-groups, @i);
+  @sprite-name: e(extract(@retina-group, 1));
+  .@{sprite-name} {
+    .retina-sprite(@retina-group);
+  }
+  .retina-sprites(@retina-groups, @i + 1);
+}

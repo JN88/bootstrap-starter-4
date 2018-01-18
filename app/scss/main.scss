@@ -1,4 +1,58 @@
+// Project variables
 @import "_variables";
-@import "bootstrap/bootstrap";
-@import "_responsive";
-@import "_utilities";
+// Include Bootstrap Library v4.x
+@import "bootstrap/bootstrap";  					
+
+
+// ==================================================
+// MAIN STYLESHEETS
+// ==================================================
+
+// --------------------------------------------------
+// # Image Sprites
+// --------------------------------------------------
+// - If you not use gulp.spritesmith to genarate auto image sprite let remove all code of this part 
+
+// Import all icon with SCSS file
+@import "sprite/_sprites";  						
+
+.icon {
+	display: inline-block;
+}
+[class^="icon-"] {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+// Genarate Image Sprite
+@include sprites($spritesheet-sprites);			// Comment or remove if you not use
+
+// Genarate SVG Sprite
+@include retina-sprites($retina-groups);		// Comment or remove if you not use
+
+
+// --------------------------------------------------
+// END: Image Sprites
+// --------------------------------------------------
+
+// --------------------------------------------------
+// # Common Styles & Override Bootstrap Style
+// --------------------------------------------------
+
+
+
+// --------------------------------------------------
+// END: Common Styles & Override Bootstrap Style
+// --------------------------------------------------
+
+
+// ==================================================
+// END: MAIN STYLESHEETS
+// ==================================================
+
+
+// --------------------------------------------------
+// Import Responsive & Utilities
+// --------------------------------------------------
+@import "_responsive";          // Responsive Styles
+@import "_utilities";           // Helper class
