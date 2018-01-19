@@ -1,0 +1,38 @@
+// Mixins Create Margin & Padding Helper classes
+// --------------------------------------------------
+@mixin margin-padding-helper-class($max-value, $counting-value: 5, $unit: px) {
+	
+	.no-m {
+	  margin: 0 !important;
+	}
+	
+	.no-p {
+	  padding: 0 !important;
+	}
+	
+	@each $sideShort, $side in (t, top), (r, right), (b, bottom), (l, left) {
+	  
+	  .no-m#{$sideShort} {
+		margin-#{$side}: 0 !important;
+	  } 
+	  
+	  .no-p#{$sideShort} {
+		padding-#{$side}: 0 !important;
+	  } 
+	}
+	
+	@while $max-value  > 0 {
+		
+		.m-#{$max-value} { margin: $max-value#{$unit} !important; }
+		
+		@each $sideShort, $side in (t, top), (r, right), (b, bottom), (l, left) {
+			.m#{$sideShort}-#{$max-value} {
+				margin-#{$side}: $max-value#{$unit} !important;;
+			}
+		}
+		
+		$max-value: $max-value - $counting-value;
+		
+	}
+	
+}

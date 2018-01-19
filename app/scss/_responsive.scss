@@ -1,0 +1,94 @@
+// ==================================================
+// RESPONSIVE BREAKPOINTS UP
+// ==================================================
+//
+// All Devices
+// --------------------------------------------------
+@include media-breakpoint-up(xs) {
+
+}
+
+
+// Small devices (landscape phones, 576px and up)
+// --------------------------------------------------
+@include media-breakpoint-up(sm) {
+
+}
+
+
+// Medium devices (tablets, 768px and up)
+// --------------------------------------------------
+@include media-breakpoint-up(md) {
+
+}
+
+
+// Large devices (desktops, 992px and up)
+// --------------------------------------------------
+@include media-breakpoint-up(lg) {
+
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+// --------------------------------------------------
+@include media-breakpoint-up(xl) {
+    
+}
+
+
+// ==================================================
+// RESPONSIVE BREAKPOINTS DOWN
+// ==================================================
+//
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) {
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {
+    
+}
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) {
+    
+}
+
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(lg) {
+    
+}
+
+// ==================================================
+// RESPONSIVE BREAKPOINTS EXACTLY
+// ==================================================
+//
+// Super Small devices (Portrait phones, less than 575.99px)
+@include media-breakpoint-only(xs) {
+    body {
+        background-color: pink;
+    }
+}
+
+// Small devices (landscape phones, 576px and 767.99px)
+@include media-breakpoint-only(sm) {
+    
+}
+
+// Medium devices (tablets, from 768px up to 991.99px)
+@include media-breakpoint-only(md) {
+    
+}
+
+// Large devices (desktops, from 992px up to 1199.99px)
+@include media-breakpoint-only(lg) {
+    
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@include media-breakpoint-only(xl) {
+    
+}
+

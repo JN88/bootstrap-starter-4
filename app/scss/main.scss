@@ -1,5 +1,6 @@
 // Project variables
 @import "_variables";
+@import "_mixins";
 // Include Bootstrap Library v4.x
 @import "bootstrap/bootstrap";  					
 
@@ -11,11 +12,12 @@
 // --------------------------------------------------
 // # Image Sprites
 // --------------------------------------------------
-// - If you not use gulp.spritesmith to genarate auto image sprite let remove all code of this part 
+// - If you do not use gulp.spritesmith to genarate auto image sprite let remove all code of this part 
 
 // Import all icon with SCSS file
 @import "sprite/_sprites";  						
 
+// Define 
 .icon {
 	display: inline-block;
 }
@@ -25,10 +27,10 @@
 }
 
 // Genarate Image Sprite
-@include sprites($spritesheet-sprites);			// Comment or remove if you not use
+@include sprites($spritesheet-sprites);			// Comment or remove if you do not use
 
 // Genarate SVG Sprite
-@include retina-sprites($retina-groups);		// Comment or remove if you not use
+@include retina-sprites($retina-groups);		// Comment or remove if you do not use
 
 
 // --------------------------------------------------

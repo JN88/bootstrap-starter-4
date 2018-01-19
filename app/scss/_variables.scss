@@ -1,8 +1,16 @@
-// // Variables
-// //
-// // Variables should follow the `$component-state-property-size` formula for
-// // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+// ==================================================
+// PROJECT VARIABLES
+// ==================================================
 //
+// Variable for Mixin "margin-padding-helper-class"
+//
+$mp-max-value:				50;			// Max vaule for margin-padding helper class
+$mp-counting-number:		5;			// Counting vaule for margin-padding helper classes
+
+
+// ==================================================
+// BOOTSTAP VARIABLES
+// ==================================================
 //
 // //
 // // Color system
